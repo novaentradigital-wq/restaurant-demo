@@ -5,7 +5,7 @@ import { MenuView } from "./menu-view";
 const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:4000";
 
 export async function generateStaticParams(): Promise<Array<{ qrToken: string }>> {
-  return [];
+  return [{ qrToken: "demo" }];
 }
 export const dynamicParams = false;
 
