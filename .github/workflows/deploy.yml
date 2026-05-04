@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       STATIC_EXPORT: "true"
-      BASE_PATH: "/demo-restaurant"
+      BASE_PATH: "/restaurant-demo"
     steps:
       - uses: actions/checkout@v4
 
