@@ -1,0 +1,15 @@
+{
+  "name": "@qrmenu/admin",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Restoran yönetici paneli — Next.js (placeholder)",
+  "scripts": {
+    "dev": "echo \"[admin] not yet scaffolded\" && exit 0",
+    "build": "echo \"[admin] not yet scaffolded\" && exit 0",
+    "lint": "echo \"[admin] not yet scaffolded\" && exit 0",
+    "typecheck": "echo \"[admin] not yet scaffolded\" && exit 0"
+  },
+  "dependencies": {
+    "@qrmenu/types": "workspace:*"
+  }
+}

@@ -1,0 +1,21 @@
+Bu klasore asagidaki .jpg dosyalarini koyun.
+Ideal boyut: 800x500 (16:9 oran), 200KB altinda.
+
+Beklenen dosyalar:
+
+  mercimek-corbasi.jpg
+  ezogelin-corbasi.jpg
+  adana-kebap.jpg
+  izgara-kofte.jpg
+  sebzeli-manti.jpg
+  kunefe.jpg
+  sutlac.jpg
+  ayran.jpg
+  turk-kahvesi.jpg
+  soda.jpg
+
+Ust dizin (../) icinde de:
+  cover.jpg     -- restoran ic mekan / yemek masasi (1400x600 onerilir)
+  logo.png      -- restoran logosu, kare/yuvarlak (256x256)
+
+Eksik dosya varsa o urunde emoji ile gradient kart gorunur.

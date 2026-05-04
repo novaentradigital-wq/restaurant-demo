@@ -1,0 +1,9 @@
+{
+  "name": "QR Menü",
+  "short_name": "Menü",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF8F4",
+  "theme_color": "#C44C29",
+  "icons": []
+}

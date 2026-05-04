@@ -1,0 +1,15 @@
+{
+  "name": "@qrmenu/waiter",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Garson tablet uygulaması — Next.js PWA (placeholder)",
+  "scripts": {
+    "dev": "echo \"[waiter] not yet scaffolded\" && exit 0",
+    "build": "echo \"[waiter] not yet scaffolded\" && exit 0",
+    "lint": "echo \"[waiter] not yet scaffolded\" && exit 0",
+    "typecheck": "echo \"[waiter] not yet scaffolded\" && exit 0"
+  },
+  "dependencies": {
+    "@qrmenu/types": "workspace:*"
+  }
+}

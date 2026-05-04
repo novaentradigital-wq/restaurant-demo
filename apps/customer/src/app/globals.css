@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg: 250 247 240;
+    --bg-soft: 244 238 226;
+    --bg-card: 255 254 251;
+    --fg: 24 18 14;
+    --fg-muted: 87 78 70;
+    --fg-subtle: 156 144 132;
+    --brand: 196 76 41;
+    --brand-dark: 156 56 28;
+    --brand-fg: 255 248 240;
+    --accent: 217 119 6;
+    --gold: 202 145 53;
+    --danger: 220 38 38;
+    --success: 22 163 74;
+    --warning: 234 179 8;
+    --border: 228 219 204;
+  }
+
+  .dark {
+    --bg: 17 14 12;
+    --bg-soft: 26 22 19;
+    --bg-card: 35 30 27;
+    --fg: 245 240 232;
+    --fg-muted: 178 168 154;
+    --fg-subtle: 120 110 98;
+    --brand: 217 119 87;
+    --brand-dark: 196 76 41;
+    --brand-fg: 17 14 12;
+    --accent: 245 158 11;
+    --gold: 222 164 70;
+    --border: 56 48 41;
+  }
+
+  html {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-bg text-fg antialiased;
+    font-feature-settings: "ss01", "cv11";
+  }
+
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+}
+
+@layer utilities {
+  /* Sıcak doku — gıda menüsüne uygun cam-altı zemin */
+  .bg-grain {
+    background-image:
+      radial-gradient(at 0% 0%, rgb(var(--brand) / 0.04) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, rgb(var(--accent) / 0.04) 0px, transparent 50%),
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.06 0'/></filter><rect width='160' height='160' filter='url(%23n)'/></svg>");
+  }
+
+  /* Glassmorphism utility */
+  .glass {
+    backdrop-filter: blur(14px) saturate(160%);
+    -webkit-backdrop-filter: blur(14px) saturate(160%);
+    background-color: rgb(var(--bg-card) / 0.72);
+    border: 1px solid rgb(var(--border) / 0.6);
+  }
+
+  .scroll-snap-x {
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  .scroll-snap-x > * { scroll-snap-align: start; }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-2xl px-4 py-3 font-medium transition-all active:scale-[0.97] disabled:opacity-50;
+  }
+  .btn-primary {
+    @apply btn bg-brand text-brand-fg shadow-glow hover:bg-brand-dark;
+  }
+  .btn-secondary {
+    @apply btn bg-bg-card text-fg border border-border hover:bg-bg-soft;
+  }
+  .btn-ghost {
+    @apply btn text-fg-muted hover:bg-bg-soft;
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "@qrmenu/kitchen",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Mutfak/Bar ekranı — Next.js (placeholder)",
+  "scripts": {
+    "dev": "echo \"[kitchen] not yet scaffolded\" && exit 0",
+    "build": "echo \"[kitchen] not yet scaffolded\" && exit 0",
+    "lint": "echo \"[kitchen] not yet scaffolded\" && exit 0",
+    "typecheck": "echo \"[kitchen] not yet scaffolded\" && exit 0"
+  },
+  "dependencies": {
+    "@qrmenu/types": "workspace:*"
+  }
+}

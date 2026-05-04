@@ -1,0 +1,15 @@
+{
+  "name": "@qrmenu/super-admin",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Süper Admin (SaaS yönetimi) — Next.js (placeholder)",
+  "scripts": {
+    "dev": "echo \"[super-admin] not yet scaffolded\" && exit 0",
+    "build": "echo \"[super-admin] not yet scaffolded\" && exit 0",
+    "lint": "echo \"[super-admin] not yet scaffolded\" && exit 0",
+    "typecheck": "echo \"[super-admin] not yet scaffolded\" && exit 0"
+  },
+  "dependencies": {
+    "@qrmenu/types": "workspace:*"
+  }
+}
