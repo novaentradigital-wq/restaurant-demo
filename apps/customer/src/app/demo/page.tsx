@@ -5,7 +5,9 @@ import type { MenuPayload } from "@/lib/api";
 
 // Local goseller — public/images/menu/ klasorunde olmali.
 // Eksik dosya icin Image hata verirse, ProductCard otomatik emoji gradient'e duser.
-const img = (name: string): string => `/images/menu/${name}`;
+// GitHub Pages gibi basePath altinda servis edilen ortamlarda src'lerin manuel prefix'lenmesi gerekiyor.
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+const img = (name: string): string => `${BASE_PATH}/images/menu/${name}`;
 
 const DEMO_DATA: MenuPayload = {
   table: { id: "demo-table", label: "İ-1", section: "İç Salon" },
@@ -13,8 +15,8 @@ const DEMO_DATA: MenuPayload = {
     id: "demo-restaurant",
     tenantId: "demo-tenant",
     name: "Lezzet Köşesi",
-    logoUrl: "/images/logo.png",
-    coverUrl: "/images/cover.jpg",
+    logoUrl: `${BASE_PATH}/images/logo.png`,
+    coverUrl: `${BASE_PATH}/images/cover.jpg`,
     currency: "TRY",
     defaultLang: "TR",
     socialLinks: {},

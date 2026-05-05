@@ -7,6 +7,9 @@ const nextConfig = {
   experimental: {
     typedRoutes: true,
   },
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
   images: {
     remotePatterns: [
       { protocol: "http", hostname: "localhost" },
